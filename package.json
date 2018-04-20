@@ -7,7 +7,8 @@
     "build": "vue-cli-service build",
     "test": "vue-cli-service test",
     "e2e": "vue-cli-service e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "postbuild": "rsync -raze \"ssh -i /home/mauro/.ssh/godaddy.pem\" --progress --delete /home/mauro/code/sudosit/dist/ mauromadeit@160.153.41.2:/home/mauromadeit/public_html/sudosit/"
   },
   "dependencies": {
     "register-service-worker": "^1.0.0",
@@ -27,8 +28,10 @@
     "@vue/test-utils": "^1.0.0-beta.10",
     "babel-core": "^7.0.0-0",
     "babel-jest": "^22.0.4",
+    "mauromadeit-vue-commons": "file:../commons-vue",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6",
+    "vue-cli-plugin-mauromadeit": "file:../plugin-mauromadeit-vue-cli",
     "vue-cli-plugin-vuetify": "^0.1.0",
     "vue-template-compiler": "^2.5.13"
   },
