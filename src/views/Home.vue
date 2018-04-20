@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex xs12 sm8 offset-sm2 md6 offset-md3 lg4 offset-lg4 xl2 offset-xl5>
         <div class="text-xs-center">
-          <div class="headline">A Life Examined</div>
+          <div class="headline">Sudo Sit</div>
         </div>
         <div v-for="item in posts" :key="item.id">
           <v-card class="my-4">

@@ -19,7 +19,7 @@ export const mutations = {
 
 export const actions = {
   getPosts: getCollection({
-    path: 'destinations/mauromadeit/posts',
+    path: 'destinations/sudosit/posts',
     mutation: 'setPosts',
   }),
 }
